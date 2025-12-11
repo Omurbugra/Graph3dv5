@@ -101,6 +101,9 @@
 
                     child.material.metalness = 0.01;
                     child.material.roughness = 0.9;
+
+                    child.material.side = THREE.DoubleSide;
+                    
                     child.castShadow = true;
                     child.receiveShadow = true;
                 }
@@ -212,6 +215,7 @@
 </script>
 </body>
 </html>
+
 
 
 
