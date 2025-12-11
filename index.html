@@ -31,7 +31,7 @@
     scene.background = new THREE.Color(sceneColor);
 
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(-30, 20, 25);
+    camera.position.set(-45, 20, 15);
     camera.lookAt(0, 0, 0);
 
 
@@ -85,9 +85,9 @@
     ];
 
     const modelInfo = {
-        "Roof": `<p>Uvalue: 0.1 - 0.5</p>`,
-        "Wall": `<p>Uvalue: 0.1 - 0.8</p>`,
-        "Windows": `<p>Uvalue: 0.75 - 2.45</p><p>Shutter transmittance: 0.2 - 0.8</p>`
+        "Roof": `<p>Uvalue: 0.1 - 0.6</p>`,
+        "Wall": `<p>Uvalue: 0.1 - 0.5</p>`,
+        "Windows": `<p>Uvalue: 0.3 - 3.0</p><p>Shutter transmittance: 0.2 - 0.8</p><p>SHGC: 0.1 - 0.75</p>`
     };
 
     const loader = new THREE.GLTFLoader();
@@ -219,6 +219,7 @@
 </script>
 </body>
 </html>
+
 
 
 
